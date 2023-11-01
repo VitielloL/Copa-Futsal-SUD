@@ -78,7 +78,7 @@ td {
 
 .tabela-brasileirao{
     position: absolute;
-    margin-top: 130px;
+    margin-top: 160px;
     z-index: -1;
     border: 1px solid #e9eaeb;
     border-top:none;
@@ -206,7 +206,7 @@ td {
     .tabela-brasileirao {
         font-size: 0.7em;
         position: absolute;
-        margin-top: 110px;
+        margin-top: 120px;
         /* margin-top: 140px; */
         z-index: -1;
         border: 1px solid #e9eaeb;
