@@ -198,7 +198,7 @@ td {
     .tabela-brasileirao {
         font-size: 0.7em;
         position: absolute;
-        margin-top: 110px;
+        margin-top: 140px;
         z-index: -1;
         border: 1px solid #e9eaeb;
         border-top: none;
@@ -214,7 +214,6 @@ td {
 
     .tabela-brasileirao-header {
         width: 100%;
-        margin-top: 15px;
     }
 
     .legenda table {
