@@ -17,6 +17,16 @@ table {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #9db7a9;
+}
+
+a:hover {
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
+}
+
 .header {
     background-color: #10502f;
     color: #ffffff;
@@ -64,27 +74,6 @@ td {
 .nav-destacado:hover {
     background-color: #0e482a;
     cursor: pointer;
-}
-
-/* CSS para dispositivos menores (móveis) */
-@media (max-width: 768px) {
-    .header {
-        font-size: 0.7em;
-    }
-
-    .header-nav td {
-        height: 40px;
-        max-width: 50%; /* Ajuste a largura máxima para caber em dispositivos menores */
-        margin-right: 15px;
-    }
-
-    .nav-conteudo-lateral {
-        width: 0;
-    }
-
-    .nav-destacado {
-        font-size: 0.7em;
-    }
 }
 
 .tabela-brasileirao{
@@ -196,6 +185,24 @@ td {
 }
 
 @media (max-width: 768px) {
+    .header {
+        font-size: 0.7em;
+    }
+
+    .header-nav td {
+        height: 40px;
+        max-width: 50%; /* Ajuste a largura máxima para caber em dispositivos menores */
+        margin-right: 15px;
+    }
+
+    .nav-conteudo-lateral {
+        width: 0;
+    }
+
+    .nav-destacado {
+        font-size: 0.7em;
+    }
+    
     .tabela-brasileirao {
         font-size: 0.7em;
         position: absolute;
