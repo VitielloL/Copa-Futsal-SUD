@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2? family= Anek+Malayalam:wght@100;400 & display=swap' );
-*{
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;400&display=swap');
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Anek Malayan', sans-serif;
     background-color: #f8f9fa;
     overflow-x: hidden;
 }
 
-table{
+table {
     width: 100vw;
     text-align: center;
 }
 
-.header{
+.header {
     background-color: #10502f;
     color: #ffffff;
     box-shadow: 0px 2px 4px #888888;
@@ -26,29 +26,64 @@ table{
     position: fixed;
 }
 
-.logo td{
+.logo td {
     height: 48px;
-    padding-top: 4px;    
+    padding-top: 4px;
 }
 
-td{
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite a quebra para a próxima linha */
+}
+
+.header-nav td {
+    flex: 1;
+    text-align: center;
+    padding: 10px; /* Adicionar espaço interno */
+    max-width: 25%;
+}
+
+td {
     height: 50px;
     width: 104px;
     color: #9db7a9;
 }
 
-.nav-conteudo-lateral{
+.nav-conteudo-lateral {
     width: 400px;
 }
 
-.nav-destacado{
+.nav-destacado {
     border-bottom: 3px solid #ffffff;
     color: #ffffff;
 }
 
-.nav-destacado:hover{
+.nav-destacado:hover {
     background-color: #0e482a;
     cursor: pointer;
+}
+
+/* CSS para dispositivos menores (móveis) */
+@media (max-width: 768px) {
+    .header {
+        font-size: 0.7em;
+    }
+
+    .header-nav td {
+        height: 40px;
+        max-width: 50%; /* Ajuste a largura máxima para caber em dispositivos menores */
+        margin-right: 15px;
+    }
+
+    .nav-conteudo-lateral {
+        width: 0;
+    }
+
+    .nav-destacado {
+        font-size: 0.7em;
+    }
 }
 
 .tabela-brasileirao{
@@ -65,71 +100,71 @@ td{
     background-color: #ffffff;
 }
 
-.tabela-brasileirao-header{
+.tabela-brasileirao-header {
     padding: 15px;
     padding-left: 20px;
     background-color: #f1f3f4;
     text-align: left;
     color: #70758d;
+    width: 100%; /* Usar 100% da largura da tabela */
 }
 
-.ano{
+.ano {
     font-weight: 600;
     color: #4285f4;
 }
 
-.tabela-brasileirao th{
+.tabela-brasileirao th {
     border-top: 1px solid #e0e0e0;
     font-weight: 100;
     color: #70758d;
     padding: 4px;
     height: 35px;
-
 }
-.tabela-brasileirao td{
+
+.tabela-brasileirao td {
     border-top: 1px solid #e0e0e0;
     font-weight: 100;
     color: #000000;
     padding: 4px;
     height: 41px;
     font-size: 1.2em;
-
 }
 
-.tabela-brasileirao img{
+.tabela-brasileirao img {
     width: 25px;
 }
 
-.titulo-clube{
+.titulo-clube {
     width: 35%;
     text-align: left;
 }
 
-.titulo-ultimas-cinco{
+.titulo-ultimas-cinco {
     width: 20%;
 }
 
-.titulo-ultimas-cinco img{
+.titulo-ultimas-cinco img {
     width: 17px;
 }
 
-.borda-azul{
+.borda-azul {
     border-left: 3px solid #4285f4;
 }
 
-.borda-laranja{
+.borda-laranja {
     border-left: 3px solid #fa7b17;
 }
 
-.borda-verde{
+.borda-verde {
     border-left: 3px solid #34a853;
 }
 
-.borda-vermelho{
+.borda-vermelho {
     border-left: 3px solid #ea4335;
 }
 
-.legenda table{
+.legenda table {
     width: 40vw;
     margin: 5px;
     margin-top: 20px;
@@ -141,20 +176,53 @@ td{
     background-color: #f8f9fa;
 }
 
-.legenda th{
+.legenda th {
     border-top: none;
     font-size: 1.1em;
     color: #000;
     font-weight: 700;
 }
 
-.legenda img{
+.legenda img {
     width: 10px;
 }
 
-.legenda td{
+.legenda td {
     border-top: none;
     font-size: 1em;
     height: 3px;
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .tabela-brasileirao {
+        font-size: 0.7em;
+        position: absolute;
+        margin-top: 110px;
+        z-index: -1;
+        border: 1px solid #e9eaeb;
+        border-top: none;
+        border-bottom: none;
+        width: 100%; /* Usar 100% da largura do contêiner pai */
+        border-collapse: collapse;
+        background-color: #ffffff;
+        display: flex; /* Usar flexbox para alinhar e centralizar */
+        flex-direction: column; /* Coluna principal */
+        align-items: center; /* Alinhar ao centro horizontalmente */
+        margin-left: 0;
+    }
+
+    .tabela-brasileirao-header {
+        width: 100%;
+    }
+
+    .legenda table {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #e9eaeb;
+        border-radius: 3px;
+        padding: 15px;
+        text-align: left;
+        background-color: #f8f9fa;
+    }
 }
