@@ -26,15 +26,16 @@ table {
     position: fixed;
 }
 
-.logo td {
-    height: 48px;
-    padding-top: 4px;
+.logo {
+    width: 3%;
+    padding-top: 10px;
 }
 
 .header-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 8px;
     flex-wrap: wrap; /* Permite a quebra para a próxima linha */
 }
 
@@ -88,7 +89,7 @@ td {
 
 .tabela-brasileirao{
     position: absolute;
-    margin-top: 110px;
+    margin-top: 130px;
     z-index: -1;
     border: 1px solid #e9eaeb;
     border-top:none;
@@ -198,7 +199,8 @@ td {
     .tabela-brasileirao {
         font-size: 0.7em;
         position: absolute;
-        margin-top: 140px;
+        margin-top: 110px;
+        /* margin-top: 140px; */
         z-index: -1;
         border: 1px solid #e9eaeb;
         border-top: none;
@@ -216,8 +218,13 @@ td {
         width: 100%;
     }
 
+    .logo {
+        width: 9%;
+        padding-top: 10px;
+    }
+
     .legenda table {
-        width: 100%;
+        width: 96%;
         margin-top: 10px;
         border: 1px solid #e9eaeb;
         border-radius: 3px;
