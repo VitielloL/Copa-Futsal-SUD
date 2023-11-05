@@ -139,6 +139,9 @@ td {
     margin: 5px 0;
 }
 
+.grupo-partidas {
+    margin-bottom: 15px;
+}
 /* Responsivo */
 @media (max-width: 768px) {
     .header {
